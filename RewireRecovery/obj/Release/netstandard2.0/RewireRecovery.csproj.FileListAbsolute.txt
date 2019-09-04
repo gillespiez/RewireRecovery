@@ -1,0 +1,16 @@
+C:\Users\Mervyn\Desktop\RewireRecovery\RewireRecovery\bin\Release\netstandard2.0\RewireRecovery.deps.json
+C:\Users\Mervyn\Desktop\RewireRecovery\RewireRecovery\bin\Release\netstandard2.0\RewireRecovery.dll
+C:\Users\Mervyn\Desktop\RewireRecovery\RewireRecovery\bin\Release\netstandard2.0\ref\RewireRecovery.dll
+C:\Users\Mervyn\Desktop\RewireRecovery\RewireRecovery\bin\Release\netstandard2.0\RewireRecovery.pdb
+C:\Users\Mervyn\Desktop\RewireRecovery\RewireRecovery\obj\Release\netstandard2.0\RewireRecovery.csprojAssemblyReference.cache
+C:\Users\Mervyn\Desktop\RewireRecovery\RewireRecovery\obj\Release\netstandard2.0\App.xaml.g.cs
+C:\Users\Mervyn\Desktop\RewireRecovery\RewireRecovery\obj\Release\netstandard2.0\HomePage.xaml.g.cs
+C:\Users\Mervyn\Desktop\RewireRecovery\RewireRecovery\obj\Release\netstandard2.0\HomePage1.xaml.g.cs
+C:\Users\Mervyn\Desktop\RewireRecovery\RewireRecovery\obj\Release\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Mervyn\Desktop\RewireRecovery\RewireRecovery\obj\Release\netstandard2.0\RewireRecovery.csproj.CoreCompileInputs.cache
+C:\Users\Mervyn\Desktop\RewireRecovery\RewireRecovery\obj\Release\netstandard2.0\RewireRecovery.AssemblyInfoInputs.cache
+C:\Users\Mervyn\Desktop\RewireRecovery\RewireRecovery\obj\Release\netstandard2.0\RewireRecovery.AssemblyInfo.cs
+C:\Users\Mervyn\Desktop\RewireRecovery\RewireRecovery\obj\Release\netstandard2.0\XamlC.stamp
+C:\Users\Mervyn\Desktop\RewireRecovery\RewireRecovery\obj\Release\netstandard2.0\RewireRecovery.dll
+C:\Users\Mervyn\Desktop\RewireRecovery\RewireRecovery\obj\Release\netstandard2.0\ref\RewireRecovery.dll
+C:\Users\Mervyn\Desktop\RewireRecovery\RewireRecovery\obj\Release\netstandard2.0\RewireRecovery.pdb

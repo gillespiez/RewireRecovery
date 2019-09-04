@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="RewireRecovery.HomePage1">
+  <!--Pages can be added as references or inline-->
+    <!-- Home page-->
+    <ContentPage Title="Home" IconImageSource="anchor.svg">
+        <StackLayout>
+            <!--Timer-->
+            <Frame BorderColor="Aquamarine" Padding="5" HeightRequest="300" WidthRequest="300" Margin="20" CornerRadius="150">
+                <Label WidthRequest="40" x:Name="lblstopwatch"  FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+            </Frame>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Button  
+                x:Name="btnStart"
+                Text="Start" 
+                BackgroundColor="LightSkyBlue"
+                HeightRequest="50" 
+                WidthRequest="15"
+                BorderRadius="20"
+                Margin="20,0"
+                Grid.Row="0"
+                 Grid.Column="1"
+                Clicked="Start_Button_Clicked"></Button>
+                <Button  
+                x:Name="btnStop"
+                Text="Restart" 
+                BackgroundColor="LightSkyBlue"
+                HeightRequest="50" 
+                WidthRequest="15" 
+                BorderRadius="20"
+                Margin="20,0"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                Clicked="Stop_Button_Clicked"></Button>
+            </Grid>
+            
+
+
+            <!--SOS-->
+          <Button 
+                Text="Call sponsor" 
+                BackgroundColor="OrangeRed"
+                HeightRequest="50" 
+                WidthRequest="30" 
+                BorderRadius="20"
+                Margin="20,0"
+                Clicked="Button_Clicked"></Button>
+            
+            <!--Trigger List-->
+            <!--Frame BorderColor="Aquamarine" Padding="5"  HeightRequest="200" Margin="20,0"-->
+                <Label WidthRequest="40" Text="Trigger List" HorizontalTextAlignment="Center"></Label>
+
+            <ListView x:Name="myListView" HasUnevenRows="True" >
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding TriggerList}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <Grid Margin="20,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+           
+                <!--<Entry x:Name="trigger" 
+                       Placeholder="Add a Trigger"
+                       Grid.Row="0"
+                       Grid.Column="1"></Entry>-->
+                <Button 
+                   HeightRequest="50"
+                    BackgroundColor="LightSkyBlue"
+                    Text="Add"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    Clicked="Trigger_Button_Clicked"></Button>
+
+            </Grid>
+            
+        </StackLayout>
+    </ContentPage>
+    <!--HomePage end-->
+    
+   <!--Inspiration page-->
+    <ContentPage Title="Inspiration">
+        <StackLayout>
+            <!--Gratitude list-->
+            
+                <Label WidthRequest="40" Text="Gratitude List" HorizontalTextAlignment="Center"></Label>
+                <Grid Margin="20,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Entry x:Name="gratitudeList" 
+                       Placeholder="I'm grateful for..."
+                       Grid.Row="0"
+                       Grid.Column="1"></Entry>
+                    <Button 
+                   HeightRequest="50"
+                    BackgroundColor="LightSkyBlue"
+                    Text="Add"
+                    Grid.Row="0"
+                    Grid.Column="2"></Button>
+                </Grid>
+ 
+            
+
+            <!--Quotes-->
+            <Frame BorderColor="Aquamarine" Padding="5"  HeightRequest="200" Margin="20,0">
+                <Label WidthRequest="40" Text="Random Quote" HorizontalTextAlignment="Center"></Label>
+            </Frame>
+
+        </StackLayout>
+    </ContentPage>
+    <!--Inspiration page end-->
+    
+    <!--Settings page-->
+    <!--<ContentPage Title="Settings">
+        <StackLayout>
+            --><!--Label--><!--
+            <Frame BackgroundColor="LightBlue" Padding="5"  HeightRequest="100" Margin="20,0" CornerRadius="20">
+                <Label WidthRequest="40" Text="Header" HorizontalTextAlignment="Center"></Label>
+            </Frame>
+
+            --><!--Satrt--><!--
+            <Frame BackgroundColor="LightBlue" Padding="5"  HeightRequest="200" Margin="20,0" CornerRadius="20">
+                <Label WidthRequest="40" Text="Start " HorizontalTextAlignment="Center"></Label>
+            </Frame>
+
+            --><!--Emergency COntact--><!--
+            <Entry Placeholder="Emergency contact" PlaceholderColor="Black" />
+        </StackLayout>
+    </ContentPage>-->
+    <!--Settings page end-->
+</TabbedPage>

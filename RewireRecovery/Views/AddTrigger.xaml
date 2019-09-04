@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:RewireRecovery.Views"
+             mc:Ignorable="d"
+             x:Class="RewireRecovery.Views.AddTrigger">
+    <ContentPage.Content>
+        <StackLayout>
+            <local:ContentView />
+            <Button x:Name="SubmitButton" Command="{Binding AddTriggerCommand}" BorderRadius="0" Text="Save Trigger" FontAttributes="Bold" TextColor="White" BackgroundColor="#5989B5"/>
+            <Label Text="View All Triggers" IsVisible="{Binding IsViewAll}" x:Name="ViewLbl" TextColor="Black" HorizontalOptions="EndAndExpand" FontSize="15">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ViewAllTriggersCommand}" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
